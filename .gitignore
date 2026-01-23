@@ -1,0 +1,9 @@
+*.DS_Store
+*.pyc
+*.pkl
+*.pickle
+*.hdf5
+*.pdf
+*.jpg
+EVP/params
+IVP/data/README.md
