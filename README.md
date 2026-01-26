@@ -1,4 +1,6 @@
 # Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores
+**Cy S. David, Daniel Lecoanet, and Pascale Garaud**
+![plot](IVP/figures/sim32_v_image.jpg)
 ## Overview
 The code in this repository supports the main results in our paper on conversion and damping of non-axisymmetric internal gravity waves in magnetized stellar cores [1] (preprint available at [arXiv:2510.14026](https://arxiv.org/abs/2510.14026)). The folder `IVP/` contains Python scripts used to numerically solve the initial value problems (IVPs) in [1] using the [Dedalus](https://dedalus-project.org) pseudo-spectral framework [2]. The folder `EVP/` contains Python scripts used to construct the Wentzel-Kramers-Brillouin (WKB) solution in [1] and compare it to the simulation results. Finally, the Mathematica notebook "phase-mixing-toy.nb" generates the phase mixing figure and animation (Figure 3) in our manuscript.
 
@@ -44,15 +46,21 @@ From `EVP/`, run<br>
 
     python run_eigen_solves.py
 
-7\. Construct the WKB solution and it compare to IVP III. Generate Figures 5,6,7,8 using `EVP/construct_wkb.ipynb`.<br>
+7\. Construct the WKB solution and it compare to IVP III. Generate Figures 5, 6, 7, 8 using `EVP/construct_wkb.ipynb`.<br>
 <br>
 8\. Generate frames for the supplementary animation ("supplementary.mp4") available on the Zenodo repository:<br>
 From `IVP/`, run<br>
 
     python plot_cg.py sim27
 
-**NOTE:** The main static figures may be generated with Steps 4-7 without completing Steps 1-3, using the snapshots and 1D timeseries available on our Zenodo repository (in the folder `data`). The folder `data` should be placed in the directory `IVP/`.
+## Available data
+The main static figures may be generated with Steps 4-7 without completing Steps 1-3, using the snapshots and 1D timeseries available on our [Zenodo repository](https://doi.org/10.5281/zenodo.18357092) at [doi:10.5281/zenodo.18357092](https://doi.org/10.5281/zenodo.18357092) in the compressed folder `data.zip`. The unzipped folder `data` should be placed in the directory `IVP/`. To download the data using the command line, run the following from `IVP/`:<br>
 
+    wget -L -O data.zip "https://zenodo.org/records/18357093/files/data.zip"
+    unzip data.zip
+    rm data.zip
+
+Then, follow Steps 4-7.
 
 ## References
 [1]: C.S. David, D. Lecoanet, and P. Garaud. Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores. In review. (Preprint available at [arXiv:2510.14026](https://arxiv.org/abs/2510.14026))<br>
