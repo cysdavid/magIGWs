@@ -1,4 +1,4 @@
-# Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores
+# Code for 'Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores'
 **Cy S. David, Daniel Lecoanet, and Pascale Garaud**
 ![plot](IVP/figures/sim32_v_image.jpg)
 ## Overview
