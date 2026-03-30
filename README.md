@@ -1,8 +1,8 @@
-# Code for 'Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores'
+# Code for 'Conversion and Damping of Nonaxisymmetric Internal Gravity Waves in Magnetized Stellar Cores'
 **Cy S. David, Daniel Lecoanet, and Pascale Garaud**
 ![plot](IVP/figures/sim32_v_image.jpg)
 ## Overview
-The code in this repository supports the main results in our paper on conversion and damping of non-axisymmetric internal gravity waves in magnetized stellar cores [1] ([doi:10.3847/1538-4357/ae4d18](https://doi.org/10.3847/1538-4357/ae4d18)). The folder `IVP/` contains Python scripts used to numerically solve the initial value problems (IVPs) in [1] using the [Dedalus](https://dedalus-project.org) pseudo-spectral framework [2]. The folder `EVP/` contains Python scripts used to construct the Wentzel-Kramers-Brillouin (WKB) solution in [1] and compare it to the simulation results. Finally, the Mathematica notebook "phase-mixing-toy.nb" generates the phase mixing figure and animation (Figure 3) in our manuscript.
+The code in this repository supports the main results in our paper on conversion and damping of nonaxisymmetric internal gravity waves in magnetized stellar cores [1] ([doi:10.3847/1538-4357/ae4d18](https://doi.org/10.3847/1538-4357/ae4d18)). The folder `IVP/` contains Python scripts used to numerically solve the initial value problems (IVPs) in [1] using the [Dedalus](https://dedalus-project.org) pseudo-spectral framework [2]. The folder `EVP/` contains Python scripts used to construct the Wentzel-Kramers-Brillouin (WKB) solution in [1] and compare it to the simulation results. Finally, the Mathematica notebook "phase-mixing-toy.nb" generates the phase mixing figure and animation (Figure 3) in our manuscript.
 
 ## Steps to reproduce the figures and animations in [1]:
 ### Run simulations and plot
@@ -41,7 +41,7 @@ From `IVP/`, run<br>
 5\. Generate the animated and static versions of Figure 3 using the Mathematica notebook `phase-mixing-toy.nb`.<br>
 
 ### Solve eigenvalue problems and construct WKB solution
-6\. Find WKB wavenumbers and eigenfunctions for both the axisymmetric and non-axisymmetric problems:<br>
+6\. Find WKB wavenumbers and eigenfunctions for both the axisymmetric and nonaxisymmetric problems:<br>
 From `EVP/`, run<br>
 
     python run_eigen_solves.py

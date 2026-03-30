@@ -1,4 +1,4 @@
-The WKB wavenumbers and eigenfunctions for both the axisymmetric and non-axisymmetric problems may be computed by running 
+The WKB wavenumbers and eigenfunctions for both the axisymmetric and nonaxisymmetric problems may be computed by running 
 
     python run_eigen_solves.py
 
