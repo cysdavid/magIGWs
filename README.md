@@ -2,7 +2,7 @@
 **Cy S. David, Daniel Lecoanet, and Pascale Garaud**
 ![plot](IVP/figures/sim32_v_image.jpg)
 ## Overview
-The code in this repository supports the main results in our paper on conversion and damping of non-axisymmetric internal gravity waves in magnetized stellar cores [1] (preprint available at [arXiv:2510.14026](https://arxiv.org/abs/2510.14026)). The folder `IVP/` contains Python scripts used to numerically solve the initial value problems (IVPs) in [1] using the [Dedalus](https://dedalus-project.org) pseudo-spectral framework [2]. The folder `EVP/` contains Python scripts used to construct the Wentzel-Kramers-Brillouin (WKB) solution in [1] and compare it to the simulation results. Finally, the Mathematica notebook "phase-mixing-toy.nb" generates the phase mixing figure and animation (Figure 3) in our manuscript.
+The code in this repository supports the main results in our paper on conversion and damping of non-axisymmetric internal gravity waves in magnetized stellar cores [1] ([doi:10.3847/1538-4357/ae4d18](https://doi.org/10.3847/1538-4357/ae4d18)). The folder `IVP/` contains Python scripts used to numerically solve the initial value problems (IVPs) in [1] using the [Dedalus](https://dedalus-project.org) pseudo-spectral framework [2]. The folder `EVP/` contains Python scripts used to construct the Wentzel-Kramers-Brillouin (WKB) solution in [1] and compare it to the simulation results. Finally, the Mathematica notebook "phase-mixing-toy.nb" generates the phase mixing figure and animation (Figure 3) in our manuscript.
 
 ## Steps to reproduce the figures and animations in [1]:
 ### Run simulations and plot
@@ -63,5 +63,5 @@ The main static figures may be generated with Steps 4-7 without completing Steps
 Then, follow Steps 4-7.
 
 ## References
-[1]: C.S. David, D. Lecoanet, and P. Garaud. Conversion and Damping of Non-axisymmetric Internal Gravity Waves in Magnetized Stellar Cores. In review. (Preprint available at [arXiv:2510.14026](https://arxiv.org/abs/2510.14026))<br>
-[2]: Burns, K. J., Vasil, G. M., Oishi, J. S., Lecoanet, D., and Brown, B. P. 2020. Dedalus: A flexible framework for numerical simulations with spectral methods. Physical Review Research, 2, 023068
+[1]: C.S. David, D. Lecoanet, and P. Garaud. 2026. Conversion and Damping of Nonaxisymmetric Internal Gravity Waves in Magnetized Stellar Cores. ApJ, 1000, 292. [doi:10.3847/1538-4357/ae4d18](https://doi.org/10.3847/1538-4357/ae4d18)<br>
+[2]: Burns, K. J., Vasil, G. M., Oishi, J. S., Lecoanet, D., and Brown, B. P. 2020. Dedalus: A flexible framework for numerical simulations with spectral methods. Phys. Rev. Res., 2, 023068. [doi:10.1103/PhysRevResearch.2.023068](https://doi.org/10.1103/PhysRevResearch.2.023068)
